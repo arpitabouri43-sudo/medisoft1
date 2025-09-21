@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pregnancy Tracker</title>
+  <link rel="stylesheet" href="stylep.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">👶 PregnancyCare</div>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt"></i> Tracker</a></li>
+        <li><a href="#"><i class="fas fa-stethoscope"></i> Appointments</a></li>
+        <li><a href="#"><i class="fas fa-heartbeat"></i> Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome, Mom-to-be! ❤️</h1>
+    <p>Track your pregnancy week by week and stay healthy with expert tips.</p>
+    <button onclick="scrollToTracker()">Track My Pregnancy</button>
+  </section>
+
+  <section class="tracker" id="tracker">
+    <h2>Pregnancy Progress</h2>
+    <label for="weekRange">Select Your Current Week: <span id="weekLabel">20</span></label>
+    <input type="range" id="weekRange" min="1" max="40" value="20" />
+    <div class="progress-bar">
+      <div class="fill" id="progressFill"></div>
+    </div>
+    <div class="info">
+      <i class="fas fa-baby"></i>
+      <p id="weekInfo">You're in Week 20! Your baby is about the size of a banana 🍌.</p>
+    </div>
+  </section>
+
+  <section class="tips">
+    <h2><i class="fas fa-lightbulb"></i> Health Tips</h2>
+    <ul>
+      <li>🍼 Stay hydrated and eat balanced meals.</li>
+      <li>🏃‍♀️ Light exercise like walking or prenatal yoga helps.</li>
+      <li>🛌 Get enough sleep and rest often.</li>
+      <li>📝 Don’t miss your doctor appointments.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PregnancyCare. All rights reserved.</p>
+  </footer>
+
+  <script src="scriptp.js"></script>
+</body>
+</html>

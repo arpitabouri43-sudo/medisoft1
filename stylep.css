@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ff8ca3;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffe1e9;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #ff8ca3;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.tracker {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.tracker h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.fill {
+  height: 100%;
+  background: #ff8ca3;
+  width: 50%;
+  transition: width 0.3s ease-in-out;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.tips {
+  background: #ffe6eb;
+  padding: 40px 20px;
+}
+
+.tips h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.tips ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ff8ca3;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

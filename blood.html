@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donation Portal</title>
+  <link rel="stylesheet" href="styleb.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-tint"></i> BloodLink</h1>
+    <p>Connecting Life - One Drop at a Time</p>
+  </header>
+
+  <section class="request-section">
+    <h2>Request Blood</h2>
+    <form id="bloodRequestForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="tel" placeholder="Contact Number" required />
+      <input type="text" placeholder="Location/City" required />
+      <select required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option><option>A-</option>
+        <option>B+</option><option>B-</option>
+        <option>AB+</option><option>AB-</option>
+        <option>O+</option><option>O-</option>
+      </select>
+      <textarea placeholder="Additional Details (Hospital, Urgency, etc.)"></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Request</button>
+    </form>
+    <p class="notification" id="notifyMsg">⏳ Waiting to send request...</p>
+  </section>
+
+  <section class="nearby-section">
+    <h2><i class="fas fa-hospital-alt"></i> Nearby Blood Banks & Donors</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fas fa-clinic-medical"></i> City Blood Bank</h3>
+        <p>Location: Downtown</p>
+        <p>Available Groups: A+, O+, B-</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-user-nurse"></i> Donor: Rahul S.</h3>
+        <p>Blood Group: B+</p>
+        <p>Distance: 2.4 km</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-user-nurse"></i> Donor: Meera K.</h3>
+        <p>Blood Group: O-</p>
+        <p>Distance: 4.2 km</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BloodLink - Saving Lives Together ❤️</p>
+  </footer>
+
+  <script src="scriptb.js"></script>
+</body>
+</html>
